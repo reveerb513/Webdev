@@ -1,0 +1,138 @@
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  /* Align content in a column */
+    margin: 0;  /* Prevent default margin */
+}
+
+header {
+    background-color: #213444;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navsearch {
+    display: flex;
+    background-color: rgb(53, 119, 157); /* Corrected background color */
+    width: 500px;
+    height: 40px;
+    border-radius: 4px;
+    align-items: center; /* Vertically center the icon */
+    padding-right: 10px; /* Optional: Adds space between icon and input field */
+}
+
+.searchicon {
+    display: flex;
+    justify-content: center; /* Horizontally center the icon */
+    align-items: center; /* Vertically center the icon */
+    width: 30px; /* Set the size of the icon container */
+    height: 30px; /* Set the size of the icon container */
+}
+
+.searchinput {
+    width: 500px;
+    border: none; /* Optional: Remove border for cleaner design */
+    padding-left: 10px; /* Optional: Adds space between input text and left side */
+    height: 100%; /* Ensure input field fills container height */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #162b40;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;  /* Make sure sidebar is above content */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    background-color: #2c3e50;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+    margin-top: 70px; /* Give space for header and search bar */
+    flex-grow: 1;  /* Ensure main content takes up remaining space */
+}
+
+#logout {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#logout:hover {
+    background-color: #c0392b;
+}
+/* Table container */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table header styling */
+th {
+    background-color: #213444;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Table cell styling */
+td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Optional: Hover effect on rows */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button styling inside table cells */
+button {
+    padding: 6px 12px;
+    background-color: #5397d6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4c89c2;
+}
+#filter{
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
